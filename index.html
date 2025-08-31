@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
     <style>
         /* Custom CSS for animations and effects */
         @keyframes fadeIn {
@@ -52,36 +53,23 @@
         }
         
         .skill-bar {
-            height: 8px;
+            width: 100%;
             background-color: #e5e7eb;
-            border-radius: 4px;
+            border-radius: 10px;
             overflow: hidden;
+            margin: 10px 0;
         }
         
         .skill-progress {
-            height: 100%;
+        width: 0;
+            height: 8px;
             background-color: #3b82f6;
             border-radius: 4px;
-            transition: width 1s all;
+            transition: width 1.5s ease-in-out;
+            
         }
         
-        .dark-mode {
-            background-color: #1f2937;
-            color: #f3f4f6;
-        }
-        
-        .dark-mode .bg-white {
-            background-color: #111827 !important;
-            color: #f3f4f6 !important;
-        }
-        
-        .dark-mode .text-gray-800 {
-            color: #f3f4f6 !important;
-        }
-        
-        .dark-mode .bg-gray-100 {
-            background-color: #1f2937 !important;
-        }
+       
     </style>
 </head>
 <body class="font-sans bg-gray-50 text-gray-800 transition-colors duration-300">
@@ -89,6 +77,8 @@
     <button id="darkModeToggle" class="fixed top-4 right-4 z-50 p-2 rounded-full bg-gray-200 dark:bg-gray-700 shadow-lg">
         <i class="fas fa-moon text-gray-800 dark:text-yellow-300"></i>
     </button>
+
+    
 
     <!-- Navigation -->
     <nav class="fixed w-full bg-white shadow-sm z-40 dark:bg-gray-900">
@@ -265,7 +255,7 @@
                                 <span class="text-gray-600 dark:text-gray-400">95%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
+                                <div class="skill-progress" data-progress="95%"></div>
                             </div>
                         </div>
                         <div>
@@ -274,7 +264,7 @@
                                 <span class="text-gray-600 dark:text-gray-400">90%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
+                                <div class="skill-progress" data-progress="90%"></div>
                             </div>
                         </div>
                         <div>
@@ -283,7 +273,7 @@
                                 <span class="text-gray-600 dark:text-gray-400">85%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
+                                <div class="skill-progress" data-progress="85%"></div>
                             </div>
                         </div>
                         <div>
@@ -292,7 +282,7 @@
                                 <span class="text-gray-600 dark:text-gray-400">75%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
+                                <div class="skill-progress" data-progress="75%"></div>
                             </div>
                         </div>
                     </div>
@@ -307,7 +297,7 @@
                                 <span class="text-gray-600 dark:text-gray-400">90%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
+                                <div class="skill-progress" data-progress="90%"></div>
                             </div>
                         </div>
                         <div>
@@ -316,7 +306,7 @@
                                 <span class="text-gray-600 dark:text-gray-400">85%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
+                                <div class="skill-progress" data-progress="85%"></div>
                             </div>
                         </div>
                         <div>
@@ -325,7 +315,7 @@
                                 <span class="text-gray-600 dark:text-gray-400">80%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
+                                <div class="skill-progress" data-progress="80%"></div>
                             </div>
                         </div>
                         <div>
@@ -334,7 +324,7 @@
                                 <span class="text-gray-600 dark:text-gray-400">95%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
+                                <div class="skill-progress" data-progress="95%"></div>
                             </div>
                         </div>
                     </div>
@@ -786,12 +776,10 @@
                 
                 if (skillsPosition < screenPosition) {
                     skillBars.forEach(bar => {
-                        const width = bar.style.width;
-                        bar.style.width = '100';
+                        const targetwidth = bar.getAttribute('data-progress');
+                        bar.style.width = targetwidth;
                         
-                        setTimeout(() => {
-                            bar.style.width = 100;
-                        }, 1000);
+                        
                     });
                 }
             }
