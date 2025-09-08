@@ -73,10 +73,7 @@
     </style>
 </head>
 <body class="font-sans bg-gray-50 text-gray-800 transition-colors duration-300">
-    <!-- Dark Mode Toggle -->
-    <button id="darkModeToggle" class="fixed top-4 right-4 z-50 p-2 rounded-full bg-gray-200 dark:bg-gray-700 shadow-lg">
-        <i class="fas fa-moon text-gray-800 dark:text-yellow-300"></i>
-    </button>
+   
 
     
 
@@ -136,7 +133,7 @@
                 <div class="md:w-1/2 flex justify-center animate-fade-in delay-200">
                     <div class="relative">
                         <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-blue-100 dark:bg-gray-700 flex items-center justify-center overflow-hidden border-4 border-blue-200 dark:border-gray-600 shadow-xl">
-                            <img src="https://via.placeholder.com/400x400" alt="Profile" class="w-full h-full object-cover">
+                            <img src="#" alt="Profile" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute -bottom-5 -right-5 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg">
                             <div class="flex items-center">
@@ -145,7 +142,7 @@
                                 </div>
                                 <div>
                                     <p class="text-sm font-medium text-gray-600 dark:text-gray-300">Currently working on</p>
-                                    <p class="text-sm font-semibold text-blue-600 dark:text-blue-400">New Portfolio</p>
+                                    <p class="text-sm font-semibold text-blue-600 dark:text-blue-400">SIH Frontend</p>
                                 </div>
                             </div>
                         </div>
@@ -628,27 +625,7 @@
             });
         });
         
-        // Dark mode toggle
-        const darkModeToggle = document.getElementById('darkModeToggle');
-        const htmlElement = document.documentElement;
         
-        // Check for saved user preference
-        if (localStorage.getItem('darkMode') === 'enabled') {
-            htmlElement.classList.add('dark');
-            darkModeToggle.innerHTML = '<i class="fas fa-sun text-yellow-300"></i>';
-        }
-        
-        darkModeToggle.addEventListener('click', () => {
-            htmlElement.classList.toggle('dark');
-            
-            if (htmlElement.classList.contains('dark')) {
-                localStorage.setItem('darkMode', 'enabled');
-                darkModeToggle.innerHTML = '<i class="fas fa-sun text-yellow-300"></i>';
-            } else {
-                localStorage.setItem('darkMode', 'disabled');
-                darkModeToggle.innerHTML = '<i class="fas fa-moon text-gray-800"></i>';
-            }
-        });
         
         // Animate elements when they come into view
         const animateOnScroll = () => {
