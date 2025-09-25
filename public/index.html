@@ -3,72 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Portfolio</title>
+    <title>Rohit Sharma - Portfolio</title>
+    
+    <!-- External CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="three.r134.min.js"></script>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-   
-    <style>
-        /* Custom CSS for animations and effects */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .animate-fade-in {
-            animation: fadeIn 1s ease-out forwards;
-        }
-        
-        .delay-100 { animation-delay: 0.1s; }
-        .delay-200 { animation-delay: 0.2s; }
-        .delay-300 { animation-delay: 0.3s; }
-        .delay-400 { animation-delay: 0.4s; }
-        .delay-500 { animation-delay: 0.5s; }
-        
-        .nav-link {
-            position: relative;
-        }
-        
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -2px;
-            left: 0;
-            background-color: #3b82f6;
-            transition: width 0.3s ease;
-        }
-        
-        .nav-link:hover::after {
-            width: 100%;
-        }
-        
-        .project-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-        
-        
-        
-        
-        
-       
-       
-    </style>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="font-sans bg-gray-50 text-gray-800 transition-colors duration-300">
-   
-
-    
-
     <!-- Navigation -->
-    <nav class="fixed w-full bg-whitea shadow-sm z-40 dark:bg-gray-900">
+    <nav class="fixed w-full bg-white shadow-sm z-40 dark:bg-gray-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
@@ -221,9 +167,8 @@
         </div>
     </section>
 
-    <!-- tools section-->
-   
-    <section id="skills" class="pt-1 pb-12  bg-gray-100 dark:bg-gray-800">
+    <!-- Skills Section -->
+    <section id="skills" class="pt-1 pb-12 bg-gray-100 dark:bg-gray-800">
         <div>
             <div class="mt-16 animate-fade-in delay-200">
                 <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-8 text-center">Tools & Technologies</h3>
@@ -272,16 +217,16 @@
                 <!-- Project 1 -->
                 <div class="project-card bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://via.placeholder.com/600x400" alt="Project 1" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <img src="https://via.placeholder.com/600x400" alt="E-commerce Website" class="w-full h-full object-cover transition duration-500 hover:scale-105">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-center mb-2">
                             <h3 class="text-xl font-semibold text-gray-800 dark:text-white">E-commerce Website</h3>
                             <div class="flex space-x-2">
-                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">
+                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300" aria-label="GitHub Repository">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">
+                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300" aria-label="Live Demo">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
@@ -300,16 +245,16 @@
                 <!-- Project 2 -->
                 <div class="project-card bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://via.placeholder.com/600x400" alt="Project 2" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <img src="https://via.placeholder.com/600x400" alt="Task Management App" class="w-full h-full object-cover transition duration-500 hover:scale-105">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-center mb-2">
                             <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Task Management App</h3>
                             <div class="flex space-x-2">
-                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">
+                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300" aria-label="GitHub Repository">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">
+                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300" aria-label="Live Demo">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
@@ -328,16 +273,16 @@
                 <!-- Project 3 -->
                 <div class="project-card bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://via.placeholder.com/600x400" alt="Project 3" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <img src="https://via.placeholder.com/600x400" alt="Weather Dashboard" class="w-full h-full object-cover transition duration-500 hover:scale-105">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-center mb-2">
                             <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Weather Dashboard</h3>
                             <div class="flex space-x-2">
-                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">
+                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300" aria-label="GitHub Repository">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">
+                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300" aria-label="Live Demo">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
@@ -356,16 +301,16 @@
                 <!-- Project 4 -->
                 <div class="project-card bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://via.placeholder.com/600x400" alt="Project 4" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <img src="https://via.placeholder.com/600x400" alt="Portfolio Website" class="w-full h-full object-cover transition duration-500 hover:scale-105">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-center mb-2">
                             <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Portfolio Website</h3>
                             <div class="flex space-x-2">
-                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">
+                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300" aria-label="GitHub Repository">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">
+                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300" aria-label="Live Demo">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
@@ -384,16 +329,16 @@
                 <!-- Project 5 -->
                 <div class="project-card bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://via.placeholder.com/600x400" alt="Project 5" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <img src="https://via.placeholder.com/600x400" alt="Recipe Finder" class="w-full h-full object-cover transition duration-500 hover:scale-105">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-center mb-2">
                             <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Recipe Finder</h3>
                             <div class="flex space-x-2">
-                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">
+                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300" aria-label="GitHub Repository">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">
+                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300" aria-label="Live Demo">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
@@ -412,16 +357,16 @@
                 <!-- Project 6 -->
                 <div class="project-card bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://via.placeholder.com/600x400" alt="Project 6" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <img src="https://via.placeholder.com/600x400" alt="Fitness Tracker" class="w-full h-full object-cover transition duration-500 hover:scale-105">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-center mb-2">
                             <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Fitness Tracker</h3>
                             <div class="flex space-x-2">
-                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">
+                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300" aria-label="GitHub Repository">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">
+                                <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300" aria-label="Live Demo">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
@@ -447,7 +392,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contactForm" class="py-20 bg-gray-100 dark:bg-gray-800">
+    <section id="contact" class="py-20 bg-gray-100 dark:bg-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 animate-fade-in">
                 <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-4">Get In <span class="text-blue-600">Touch</span></h2>
@@ -497,19 +442,19 @@
                     <div class="mt-10">
                         <h4 class="font-semibold text-gray-800 dark:text-white mb-4">Follow Me</h4>
                         <div class="flex space-x-4">
-                            <a href="#" class="w-10 h-10 bg-white dark:bg-gray-700 rounded-full flex items-center justify-center shadow-md hover:bg-blue-600 hover:text-white transition duration-300">
+                            <a href="#" class="w-10 h-10 bg-white dark:bg-gray-700 rounded-full flex items-center justify-center shadow-md hover:bg-blue-600 hover:text-white transition duration-300" aria-label="GitHub">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="#" class="w-10 h-10 bg-white dark:bg-gray-700 rounded-full flex items-center justify-center shadow-md hover:bg-blue-600 hover:text-white transition duration-300">
+                            <a href="#" class="w-10 h-10 bg-white dark:bg-gray-700 rounded-full flex items-center justify-center shadow-md hover:bg-blue-600 hover:text-white transition duration-300" aria-label="LinkedIn">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
-                            <a href="#" class="w-10 h-10 bg-white dark:bg-gray-700 rounded-full flex items-center justify-center shadow-md hover:bg-blue-600 hover:text-white transition duration-300">
+                            <a href="#" class="w-10 h-10 bg-white dark:bg-gray-700 rounded-full flex items-center justify-center shadow-md hover:bg-blue-600 hover:text-white transition duration-300" aria-label="Twitter">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="#" class="w-10 h-10 bg-white dark:bg-gray-700 rounded-full flex items-center justify-center shadow-md hover:bg-blue-600 hover:text-white transition duration-300">
+                            <a href="#" class="w-10 h-10 bg-white dark:bg-gray-700 rounded-full flex items-center justify-center shadow-md hover:bg-blue-600 hover:text-white transition duration-300" aria-label="Instagram">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="#" class="w-10 h-10 bg-white dark:bg-gray-700 rounded-full flex items-center justify-center shadow-md hover:bg-blue-600 hover:text-white transition duration-300">
+                            <a href="#" class="w-10 h-10 bg-white dark:bg-gray-700 rounded-full flex items-center justify-center shadow-md hover:bg-blue-600 hover:text-white transition duration-300" aria-label="Dribbble">
                                 <i class="fab fa-dribbble"></i>
                             </a>
                         </div>
@@ -517,27 +462,27 @@
                 </div>
                 
                 <div class="md:w-1/2">
-                    <form class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
+                    <form id="contactForm" class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
                         <h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-6">Send Me a Message</h3>
                         
                         <div class="mb-6">
                             <label for="name" class="block text-gray-700 dark:text-gray-300 mb-2">Your Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white" placeholder="Enter your name">
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white" placeholder="Enter your name" required>
                         </div>
                         
                         <div class="mb-6">
                             <label for="email" class="block text-gray-700 dark:text-gray-300 mb-2">Your Email</label>
-                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white" placeholder="Enter your email">
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white" placeholder="Enter your email" required>
                         </div>
                         
                         <div class="mb-6">
                             <label for="subject" class="block text-gray-700 dark:text-gray-300 mb-2">Subject</label>
-                            <input type="text" id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white" placeholder="Enter subject">
+                            <input type="text" id="subject" name="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white" placeholder="Enter subject" required>
                         </div>
                         
                         <div class="mb-6">
                             <label for="message" class="block text-gray-700 dark:text-gray-300 mb-2">Your Message</label>
-                            <textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white" placeholder="Enter your message"></textarea>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white" placeholder="Enter your message" required></textarea>
                         </div>
                         
                         <button type="submit" class="w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 shadow-lg">
@@ -559,16 +504,16 @@
                 </div>
                 
                 <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300" aria-label="GitHub">
                         <i class="fab fa-github text-xl"></i>
                     </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in text-xl"></i>
                     </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300" aria-label="Twitter">
                         <i class="fab fa-twitter text-xl"></i>
                     </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300" aria-label="Instagram">
                         <i class="fab fa-instagram text-xl"></i>
                     </a>
                 </div>
@@ -586,60 +531,7 @@
         </div>
     </footer>
 
-    <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobileMenuButton');
-        const mobileMenu = document.getElementById('mobileMenu');
-        
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    mobileMenu.classList.add('hidden');
-                }
-            });
-        });
-        
-        
-        
-        // Animate elements when they come into view
-        const animateOnScroll = () => {
-            const elements = document.querySelectorAll('.animate-fade-in');
-            
-            elements.forEach(element => {
-                const elementPosition = element.getBoundingClientRect().top;
-                const screenPosition = window.innerHeight / 1.3;
-                
-                if (elementPosition < screenPosition) {
-                    element.style.opacity = '1';
-                }
-            });
-        };
-        
-        // Initialize animation on load
-        window.addEventListener('load', () => {
-            animateOnScroll();
-        });
-        
-        // Animate on scroll
-        window.addEventListener('scroll', animateOnScroll);
-        
-        
-    </script>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
